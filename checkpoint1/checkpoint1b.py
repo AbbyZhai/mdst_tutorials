@@ -90,7 +90,7 @@ def main():
     # you will use this file in checkpoint 2
     
     # save the DataFrame as a csv file in the data folder
-    df.to_csv('../data/starbucks_clean.csv', index=True)
+    df.to_csv('../data/starbucks_clean.csv', index=False)
 
 if __name__ == "__main__":
     main()
