@@ -21,7 +21,7 @@ import pandas as pd
 import numpy as np
 
 def remove_percents(df, col):
-    # if any nan in df[col], fill nan to 0%
+    # if any nan in df[col], fill nan to 0% for later convinent
     if df[col].isnull().any():
         df[col].fillna('0%', inplace=True)
     # remove all the % char at the end of the str 
