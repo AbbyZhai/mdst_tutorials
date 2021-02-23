@@ -52,7 +52,7 @@ def fix_strings(df, col):
     # remove all the ® chars
     #df[col] = df[col].str.replace('®', '')
     # remove all the non-alpha chars
-    df[col] = df[col].str.replace(r'[^A-Za-z]', '')
+    df[col] = df[col].str.replace(r'[^A-Za-z ]', '')
     return df
 
 
