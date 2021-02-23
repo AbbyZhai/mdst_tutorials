@@ -44,7 +44,7 @@ def fix_caffeine(df):
 
 def standardize_names(df):
     df.columns = df.columns.str.lower()
-    df.columns = df.columns.str.replace(' \([a-zA-Z %]+\)', '')
+    df.columns = df.columns.str.replace(' \([a-zA-Z %]+\)', '', regex=True)
     return df
 
 def fix_strings(df, col):
@@ -52,7 +52,7 @@ def fix_strings(df, col):
     # remove all the ® chars
     #df[col] = df[col].str.replace('®', '')
     # remove all the non-alpha chars
-    df[col] = df[col].str.replace(r'[^A-Za-z ]', '')
+    df[col] = df[col].str.replace(r'[^A-Za-z ]', '', regex=True)
     return df
 
 
