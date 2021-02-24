@@ -1,9 +1,7 @@
 tutorial1
 tutorial2
 env
-README.md
 data
-requirements.txt
 .DS_Store
 __pycache__
 .ipynb_checkpoints
